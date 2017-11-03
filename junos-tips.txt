@@ -1,0 +1,13 @@
+посмотреть маршруты в таблице FIB какого-нибудь VPN:
+
+show route forwarding-table vpn <имя VPN>
+
+подбор busrt-size-limit:
+
+1. Когда полоса известна:
+
+busrt = (bandwidth * burst-period) / 8
+
+2. Когда полоса неизвестна
+
+burst = interface MTU * 10
